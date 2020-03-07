@@ -1,0 +1,107 @@
+author {
+    display: none;
+}
+body {
+    font-family: "Comic Sans Ms", monospace;
+    font-size: 20px;
+    color: orangered;
+    text-shadow: 0px 0px 4px mediumblue;
+    background-color: ghostwhite;
+    background-image: url('https://i.pinimg.com/originals/12/c8/3e/12c83efa4d0baf8aa39a48a40a173da8.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#calculator {
+    height: 800px;
+    width: 500px;
+    background-image: url('https://images.unsplash.com/photo-1546962339-5ff89552b8ed?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb'); /* just in case */
+    background-image: url('https://freerangestock.com/sample/40903/stone-wall-texture-.jpg');
+    background-size: cover;
+    background-color: gray;
+    position: relative;
+    top: 20%;
+    left: 35%;
+    font-family: inherit;
+    border-width: 10px;
+    border-color: rgba(61, 30, 1, 0.521);
+    border-style: solid;
+    border-radius: 30px;
+    margin-top: 2%;
+}
+#display {
+    background-color: rgb(25, 212, 66);
+    background-image: url('https://www.filterforge.com/filters/1061-v4.jpg');
+    color: ghostwhite;
+    text-shadow: 0px 0px 2px black, 0px 0px 5px black, 0px 0px 10px black;
+    height: 150px;
+    width: 450px;
+    position: relative;
+    border-width: 3px;
+    border-color: greenyellow;
+    margin-top: 100px;
+    margin-bottom: 75px;
+    margin-left: 25px;
+    border: 3px solid sienna;
+    overflow: hidden;
+ 
+}
+#inputZone, #answerZone {
+    width: 430px;
+    height: 55px;
+    padding: 10px 10px;
+}
+#answerZone{
+    text-align: right;
+}
+
+
+button {
+    height: 90px;
+    width: 115px;
+    border-color: #a9472f9c;
+    border-width: 5px;
+    border-style: solid;
+    background-color: rgba(0, 0, 0, 0.696);
+    font-family: "Comic Sans MS", monospace;
+    color: ghostwhite;
+    font-size: 35px;
+    margin: auto;
+    position: relative;
+    left: 2.2%;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+button:hover {
+    text-shadow: 0px 0px 4px darkred, 0px -2px 6px orangered, 0px -3px 10px palegoldenrod;
+    color: orange;
+    box-shadow: 0px -5px 8px darkred, 0px -8px 11px red, 0px -13px 14px orangered, 0px -25px 17px orange, 0px -35px 17px yellow, 0px -52px 20px palegoldenrod;
+    border-color: maroon;
+    
+}
+
+.operatorBtn:hover {
+    color: lightblue;
+    text-shadow: 0px 0px 2px darkblue;
+    border-color: paleturquoise;
+    box-shadow: 0px 0px 10px skyblue, 0px 0px 25px lightskyblue;
+
+}
+.specialBtn:hover {
+    color: navy;
+    border-color:purple;
+    text-shadow: 0px 0px 3px violet, 0px 0px 9px violet;
+    box-shadow: 0px 0px 5px navy, 0px 0px 10px darkmagenta, 0px 0px 20px darkblue;
+}
+#equals {
+    width: 236px;
+    border-radius: 60px;
+}
+#equals:hover {
+    border-color: #7fd81e;
+    text-shadow: 0px 0px 10px #eeff08 ;
+    color: #67f100;
+    box-shadow: 0px 0px 15px #eeff08;
+}
+
+
+
