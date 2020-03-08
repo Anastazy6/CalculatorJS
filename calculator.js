@@ -175,3 +175,99 @@ function operate(operator, firstArg, secondArg){
         }
         } checkIfEvilAll();
     }
+
+    window.onkeydown = function(event){     // keyboard suppor. It's goddamn long.
+        let x = event.key;
+        let chosenOne;
+        let group;
+        switch(x){
+            case '1':
+                chosenOne = document.querySelector("#one");
+                group = 'fire';
+                break;
+            case '2':
+                chosenOne = document.querySelector("#two");
+                group = 'fire';
+                break;
+            case '3':
+                chosenOne = document.querySelector("#three");
+                group = 'fire';
+                break;
+            case '4':
+                chosenOne = document.querySelector("#four");
+                group = 'fire';
+                break;
+            case '5':
+                chosenOne = document.querySelector("#five");
+                group = 'fire';
+                break;
+            case '6':
+                chosenOne = document.querySelector("#six");
+                group = 'fire';
+                break;
+            case '7':
+                chosenOne = document.querySelector("#seven");
+                group = 'fire';
+                break;
+            case '8':
+                chosenOne = document.querySelector("#eight");
+                group = 'fire';
+                break;
+            case '9':
+                chosenOne = document.querySelector("#nein");
+                group = 'fire';
+                break; // sigh
+            case '0':
+                chosenOne = document.querySelector("#Zero");
+                group = 'fire';
+                break;
+            case '+':
+                chosenOne = document.querySelector('#add');
+                group = 'frost';
+                break;
+            case '-':
+                chosenOne = document.querySelector('#subtract');
+                group = 'frost';
+                break;
+            case 'x':
+                chosenOne = document.querySelector('#multiply');
+                group = 'frost';
+                break;
+            case '*':
+                chosenOne = document.querySelector('#multiply');
+                group = 'frost';
+                break;
+            case '/':
+                chosenOne = document.querySelector('#divideAndconquer');
+                group = 'frost';
+                break;
+            case '%':
+                chosenOne = document.querySelector('#vodka');
+                group = 'fel';
+                break;
+            case '=':
+                chosenOne = document.querySelector('#equals');
+                group = 'fel';
+                break;
+            case 'Enter':
+                chosenOne = document.querySelector('#equals');
+                group = 'fel';
+                break;
+            case '.':
+                chosenOne = document.querySelector("#dot");
+                group = 'shadow';
+                break;
+            case 'Backspace':
+                chosenOne = document.querySelector("#backspace");
+                group = 'shadow';
+                break;
+            case 'Escape':
+                chosenOne = document.querySelector('#clear');
+                group = 'shadow';
+                break; //it's not wet. It's a flood! sigh
+        }   if (chosenOne != undefined){
+                chosenOne.click();
+                chosenOne.classList.add(group);
+                this.setTimeout(function() {chosenOne.classList.remove(group)}, 250);
+        }
+    }
