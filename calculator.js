@@ -114,6 +114,8 @@ function operate(operator, firstArg, secondArg){
             operatorSpan.textContent = '';
             secondOperandSpan.textContent = '';
             checkIfEvilAll();
+        } else {
+            console.log("Wat u doin mon?");
         }
     }
 
