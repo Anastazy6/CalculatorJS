@@ -43,6 +43,7 @@ body {
     margin-left: 25px;
     border: 3px solid sienna;
     overflow: hidden;
+    border-radius: 15px;;
  
 }
 #inputZone, #answerZone {

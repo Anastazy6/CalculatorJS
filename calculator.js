@@ -8,7 +8,12 @@ function multiply(a,b){
     return parseFloat(a) * parseFloat(b)
 }
 function divide(a,b){
+    if (b != '0'){
     return parseFloat(a) / parseFloat(b)
+    } else {
+        alert("Division by zero is not possible! Since this site is kinda hell-themed, there's little room for additional punishment for such a sin. Hope clearing the calculator suffices... ");
+        clearBtn.click();
+    }
 }
 
 function operate(operator, firstArg, secondArg){
@@ -85,9 +90,22 @@ function operate(operator, firstArg, secondArg){
 
     const clearBtn = document.getElementById('clear');
 
-    clearBtn.onclick = function(){
-        firstOperandSpan.textContent = '';
-        operatorSpan.textContent = '';
+    clearBtn.onclick = function(){                  // since all the data is stored as textContent, clearing these 4 spans/zones is enough to start
+        firstOperandSpan.textContent = '';   // calculating from scratch. Seriosly, no variables, just text contend. The price of this simplicity
+        operatorSpan.textContent = '';          // of calculations and clearing is writing '.textContent' a kjære-Odin-ton times. Kinda WET.
         secondOperandSpan.textContent = '';
         answerZone.textContent = '';
+    }
+
+    const backspaceBtn = document.getElementById('backspace');
+    backspaceBtn.onclick = function(){
+        if (secondOperandSpan.textContent != ''){
+            secondOperandSpan.textContent = secondOperandSpan.textContent.slice(0,-1);
+        } else if (operatorSpan.textContent != ''){
+            operatorSpan.textContent = '';
+        } else if (firstOperandSpan.textContent != ''){
+            firstOperandSpan.textContent = firstOperandSpan.textContent.slice(0,-1);
+        } else {
+            console.log("It seems you are pushing the backspace button regardless of the fact that there's nothing to clear. Hope you enjoy it!")
+        }
     }
