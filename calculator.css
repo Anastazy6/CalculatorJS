@@ -36,6 +36,7 @@ body {
     
     color: ghostwhite;
     text-shadow: 0px 0px 2px black, 0px 0px 5px black, 0px 0px 10px black;
+    box-shadow: 0px 0px 16px orangered;
     height: 150px;
     width: 450px;
     position: relative;
