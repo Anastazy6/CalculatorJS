@@ -15,22 +15,25 @@ body {
     height: 800px;
     width: 500px;
     background-image: url('https://images.unsplash.com/photo-1546962339-5ff89552b8ed?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb'); /* just in case */
-    background-image: url('https://freerangestock.com/sample/40903/stone-wall-texture-.jpg');
+    background-image: url('https://freerangestock.com/sample/40903/stone-wall-texture-.jpg'); /* just in case as well */
+    background-image: url('https://i.pinimg.com/originals/c9/5b/c5/c95bc58a334b78e83705f52f9745f803.jpg');
     background-size: cover;
     background-color: gray;
+    box-shadow: -12px -11px 20px 10px rgba(20,0,20,1);
     position: relative;
     top: 20%;
     left: 35%;
     font-family: inherit;
     border-width: 10px;
-    border-color: rgba(61, 30, 1, 0.521);
+    border-color: rgba(134, 2, 2, 0.61);
     border-style: solid;
     border-radius: 30px;
     margin-top: 2%;
 }
 #display {
     background-color: rgb(25, 212, 66);
-    background-image: url('https://www.filterforge.com/filters/1061-v4.jpg');
+    background-image: url('https://www.filterforge.com/filters/1061-v4.jpg'); 
+    
     color: ghostwhite;
     text-shadow: 0px 0px 2px black, 0px 0px 5px black, 0px 0px 10px black;
     height: 150px;
@@ -50,9 +53,17 @@ body {
     width: 430px;
     height: 55px;
     padding: 10px 10px;
+    transition: 0.666s;
+}
+#firstOperand {
+    transition: 0.666s;
+}
+#secondOperand {
+    transition: 0.666s;
 }
 #answerZone{
     text-align: right;
+    transition: 0.666s;
 }
 
 
@@ -105,6 +116,10 @@ button:hover {
 }
 button:focus {
     outline: none;
+}
+.burning {
+    text-shadow: 0px 0px 4px darkred, 0px -2px 6px orangered, 0px -3px 10px palegoldenrod;
+    color: orange;
 }
 
 
